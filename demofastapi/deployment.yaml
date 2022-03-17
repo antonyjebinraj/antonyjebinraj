@@ -14,10 +14,10 @@ spec:
     spec:
       containers:
       - name: mycontainer
-        image: myimage
+        image: jebinraj/cicd-k8s-demo:latest
         imagePullPolicy: Always
         ports:
-        - containerPort: 80
+        - containerPort: 5000
 ---
 apiVersion: v1
 kind: Service
