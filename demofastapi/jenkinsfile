@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = "jebinraj/myimage"
+    registry = "jebinraj/demo"
     registryCredential = 'dockerhub_id'
     dockerImage = ''
   }
