@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: mycontainer
-        image: jebinraj/cicd-k8s-demo:latest
+        image: jebinraj/demo:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
