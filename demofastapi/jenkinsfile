@@ -9,10 +9,6 @@ pipeline {
     stage('Compile') {
       steps {
         git 'https://github.com/antonyjebinraj/antonyjebinraj.git'
-        script{
-                def mvnHome = tool name: 'MAVEN_HOME', type: 'maven'
-                sh "C:\Program Files\apache-maven-3.8.5\bin"
-        }
       }
     }
     stage('Building Docker Image') {
