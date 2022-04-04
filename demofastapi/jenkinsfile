@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Compile') {
       steps {
-        git credentialsId: 'dockerhub_id', url: 'https://github.com/antonyjebinraj/antonyjebinraj.git'
+        git credentialsId: 'docker-hub-credentials', url: 'https://github.com/antonyjebinraj/antonyjebinraj.git'
       }
     }
     stage('Building Docker Image') {
